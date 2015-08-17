@@ -55,7 +55,7 @@ $(function() {
       || href.indexOf(':') === -1)
     {
       history.pushState({}, '', href);
-      //e.preventDefault();
+      e.preventDefault();
       addAnimateAndLoad(href);
       
       return false;
