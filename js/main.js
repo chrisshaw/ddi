@@ -45,6 +45,8 @@ $(function() {
   $(window).on("popstate", function(e) {
     if (e.originalEvent.state !== null) {
       loadPage(location.href, $viewContainer);
+    } else {
+      loadPage(location.href, $viewContainer);
     }
   });
 
