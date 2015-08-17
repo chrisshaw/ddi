@@ -19,7 +19,7 @@ a:hover {
   color: #fff;
 }
 
-#branches {
+.list {
   list-style-type: none;
   margin-left: 0;
   padding: 0;
