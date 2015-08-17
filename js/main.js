@@ -50,6 +50,7 @@ $(function() {
 
   $(document).on("click", "a, area, .menu-item", function(e) {
     var href=  $(this).attr("href");
+    console.log(href);
 
     if (href.indexOf(document.domain) > -1
       || href.indexOf(':') === -1)
