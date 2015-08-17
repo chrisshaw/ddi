@@ -5,7 +5,7 @@ var SVGJQ = function (){
     console.log("Setting up SVG files...");
     if($sprite === null){
       console.log("Sprite not loaded. Loading sprite...");
-      $.get("//ddi.agency/svg/stack/sprite.svg").done(function(data){
+      $.get("http://ddi.agency/svg/stack/sprite.svg").done(function(data){
           $sprite = $(data);
           loadSvgs();
         }
