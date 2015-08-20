@@ -1,1 +1,0 @@
-svg-sprite --dest=svg --stack --log=debug --stack-sprite=svg/sprite.svg svg/src/*.svg
