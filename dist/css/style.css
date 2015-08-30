@@ -1,0 +1,167 @@
+/***********/
+/* GLOBALS */
+/***********/
+
+/* Body */
+
+body {
+  position: relative;
+}
+
+/*Links*/
+a {
+  pointer-events: auto;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.list {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+/* font styles */
+
+.sub-lead {
+  margin: 0 auto;
+}
+
+small {
+  display: block;
+  margin: 0 auto;
+}
+
+.work-link {
+  padding-bottom: 1em;
+}
+
+/* Footer */  
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/*********/
+/* SHELL */
+/*********/
+.page {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding-top: 12vh;
+  overflow-x: hidden;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#bg {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #660066;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);  
+}
+
+/**************/
+/* VIEWS */
+/**************/
+
+.view {
+  padding: 0 10px;
+}
+
+.view .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/**********/
+/* LOADER */
+/**********/
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 100%;  
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
+}
+
+/**********************/
+/* RESPONSIVE QUERIES */
+/**********************/
+
+.resp-container {
+  padding-bottom: 1em;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  
+  .subtitle {
+    display:inline-block;
+  }
+  
+  .view {
+    padding: 0;
+  }
+
+/* Handle the widths and text-alignment */
+  .resp-container {
+    width: 90%; /* Must be percentage or pixels for horizontal alignment */
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .resp-container {
+    width: 80%;
+  }
+}
+
+/***********/
+/*KEYFRAMES*/
+/***********/
+
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
